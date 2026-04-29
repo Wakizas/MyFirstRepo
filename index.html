@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Pomodoro Timer</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Salut les amis !</h1>
-        <p>Je suis heureux de vous voir</p>
+        <div class="container">
+            <h1>🍅 Pomodoro Timer</h1>
+            
+            <div class="mode-buttons">
+                <button id="pomodoro-btn" class="mode-btn active">Pomodoro</button>
+                <button id="short-break-btn" class="mode-btn">Pause courte</button>
+                <button id="long-break-btn" class="mode-btn">Pause longue</button>
+            </div>
+            
+            <div class="timer-display" id="timer">25:00</div>
+            
+            <div class="controls">
+                <button id="start-btn" class="control-btn start">Démarrer</button>
+                <button id="pause-btn" class="control-btn pause" disabled>Pause</button>
+                <button id="reset-btn" class="control-btn reset">Réinitialiser</button>
+            </div>
+            
+            <div class="stats">
+                <p>Pomodoros complétés: <span id="completed-count">0</span></p>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
     </body>
 </html>
