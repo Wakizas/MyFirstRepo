@@ -1,4 +1,134 @@
-h1
-{
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #667eea;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.mode-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.mode-btn:hover {
+    background: #e0e0e0;
+}
+
+.mode-btn.active {
+    background: #667eea;
+    color: white;
+}
+
+.timer-display {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 5px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.control-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.control-btn.start {
+    background: #4CAF50;
+    color: white;
+}
+
+.control-btn.start:hover {
+    background: #45a049;
+}
+
+.control-btn.pause {
+    background: #ff9800;
+    color: white;
+}
+
+.control-btn.pause:hover {
+    background: #f57c00;
+}
+
+.control-btn.pause:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.control-btn.reset {
+    background: #f44336;
+    color: white;
+}
+
+.control-btn.reset:hover {
+    background: #da190b;
+}
+
+.stats {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.stats p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+#completed-count {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
